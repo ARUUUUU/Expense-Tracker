@@ -1,0 +1,142 @@
+---------- Global Styles ----------
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #48628a;
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3 {
+  color: #222;
+}
+
+/* ---------- App Container ---------- */
+.container {
+    width: 90%;
+    max-width: 900px;
+    margin: 50px auto;
+    background: #7472d2cc;
+    backdrop-filter: blur(8px);
+    padding: 30px;
+    border-radius: 16px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2);
+    animation: fadeIn 1s ease;
+}
+
+/* ---------- Header ---------- */
+h1 {
+  text-align: center;
+  font-size: 2.2rem;
+  font-weight: 700;
+  margin-bottom: 25px;
+  color: #2563eb;
+}
+
+/* ---------- Form ---------- */
+form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-bottom: 25px;
+  justify-content: space-between;
+}
+
+form input {
+  flex: 1;
+  min-width: 150px;
+  padding: 10px 14px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+  transition: border-color 0.2s;
+}
+
+form input:focus {
+  border-color: #2563eb;
+  outline: none;
+}
+
+form button {
+  background-color: #2563eb;
+  color: #fff;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background 0.2s;
+}
+
+form button:hover {
+  background-color: #1d4ed8;
+}
+
+/* ---------- Expense List ---------- */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+table th {
+  background-color: #f1f5f9;
+  text-align: left;
+  padding: 10px;
+  font-weight: 600;
+  color: #374151;
+}
+
+table td {
+  padding: 10px;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+table tr:hover {
+  background-color: #f9fafb;
+}
+
+button.delete-btn {
+  background-color: #ef4444;
+  color: white;
+  border: none;
+  padding: 6px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+
+button.delete-btn:hover {
+  background-color: #dc2626;
+}
+
+/* ---------- Chart ---------- */
+.chart-container {
+  margin: 30px auto;
+  max-width: 400px;
+  background: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.08);
+}
+
+.chart-container h3 {
+  text-align: center;
+  margin-bottom: 15px;
+  color: #111;
+}
+
+/* ---------- Responsive ---------- */
+@media (max-width: 600px) {
+  form {
+    flex-direction: column;
+  }
+
+  table th, table td {
+    font-size: 0.9rem;
+  }
+
+  .container {
+    padding: 20px;
+  }
+}
+
